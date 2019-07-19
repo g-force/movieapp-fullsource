@@ -1,0 +1,21 @@
+#movie-filter {
+  width: 100%;
+  padding: 20px;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 300;
+
+  button {
+    width: 110px;
+    padding: 12px;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button.active {
+    color: #ffffff;
+    background-color: #1563a5;
+  }
+}

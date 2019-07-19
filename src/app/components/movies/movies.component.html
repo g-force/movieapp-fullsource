@@ -1,0 +1,7 @@
+<div id="movie-filter">
+  <button *ngFor="let filterMovieYear of filterMovieYears" (click)="fetchAndFilterByYear(filterMovieYear.year)"
+    [ngClass]="{'active':filterMovieYear.year === currentFilterYear}">
+    {{ filterMovieYear.year }}'s
+  </button>
+</div>
+<app-movie-item *ngFor="let movie of movies" [movie]="movie"></app-movie-item>

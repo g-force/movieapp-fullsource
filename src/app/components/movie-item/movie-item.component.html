@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="card">
+    <div class="img">
+      <img [src]="movie.Detail.PosterLocalFilePath" alt="{{ movie.Title }}">
+    </div>
+    <div class="content">
+      <h1 class="title">
+        {{ movie.Detail.Title }}
+      </h1>
+      <div class="row-header">
+        <div class="rating">
+          PG-13
+        </div>
+        <div class="run-time">
+          {{ movie.Detail.Runtime }}
+        </div>
+        <div class="release-date">
+          {{ movie.Detail.Released }}
+        </div>
+      </div>
+      <div class="plot">
+        {{ movie.Detail.Plot }}
+      </div>
+    </div>
+    <div class="footer">
+      <a href="https://www.imdb.com/title/{{ movie.imdbID }}/" target="_blank">
+        <button>View on IMDB</button>
+      </a>
+    </div>
+  </div>
+</div>
